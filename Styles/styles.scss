@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primary: #191d2b;
+  --color-secondary: #27ae60;
+  --color-whte: #ffffff;
+  --color-black: #000;
+  --color-grey0: #f8f8f8;
+  --color-grey1: #dbe1e8;
+  --color-grey2: #b2becd;
+  --color-grey3: #6c7983;
+  --color-grey4: #454e56;
+  --color-grey5: #2a2e35;
+  --color-grey6: #12182b;
+}
+
+body {
+  background-color: white;
+}
+
+header {
+  height: 100vh;
+  color: var(--color-whte);
+  overflow: hidden;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 3rem 18rem;
+}
+
+.section {
+  transform: translateY(-100%) scale(0);
+  transition: all 0.4s ease-in-out;
+  background-color: var(--color-primary);
+}
+
+.section-header {
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+.about {
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+.portfolio {
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+.blogs {
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+.about {
+  display: none;
+  transform: translateY(0) scale(1);
+}
