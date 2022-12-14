@@ -34,7 +34,6 @@ section {
   position: absolute;
   left: 0;
   top: 0;
-  padding: 3rem 18rem;
 }
 
 .section {
@@ -48,24 +47,34 @@ section {
   transform: translateY(0) scale(1);
 }
 
+.home {
+  display: none;
+  transform: translateY(0) scale(1);
+  background-color: white;
+}
+
 .about {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: rgb(255, 255, 255);
 }
 
 .portfolio {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: red;
 }
 
 .blogs {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: blue;
 }
 
-.about {
+.contact {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: greenyellow;
 }
 
 .controls {
@@ -79,14 +88,14 @@ section {
   align-items: center;
   justify-content: center;
   .active-btn {
-    background-color: rgb(25, 172, 240) !important;
+    background-color: rgb(134, 218, 254) !important;
     transition: all 0.4s ease-in-out;
   }
   .control {
     color: white;
     padding: 1rem;
     cursor: pointer;
-    background-color: var(--color-grey4);
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,4 +109,63 @@ section {
       pointer-events: none;
     }
   }
+}
+
+.active {
+  display: block;
+  animation: scaleAnim 1s ease-in-out;
+  @keyframes scaleAnim {
+    0% {
+      transform: translateY(-100%) scaleY(0);
+    }
+    100% {
+      transform: translateY(0) scaleY(1);
+    }
+  }
+}
+
+.header-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.headshot {
+  height: 499px;
+  width: 500px;
+  flex: 1;
+  border-radius: 50%;
+  margin-bottom: 0;
+}
+
+.headshot-background {
+  background-color: rgb(160, 227, 255);
+  border-radius: 50%;
+  height: 498px;
+}
+
+.name {
+  flex: 1;
+  color: black;
+}
+
+.left-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.right-header {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.intro-text {
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  width: 400px;
 }

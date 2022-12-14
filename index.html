@@ -12,31 +12,51 @@
 
     <title>Document</title>
   </head>
-  <body>
+  <body class="main-content">
+    <header class="section-header section home" id="home">
+      <div class="header-content">
+        <div class="left-header">
+          <div class="headshot-background">
+            <img class="headshot" src="./Mock Site Head Shot.png" />
+          </div>
+          <div>
+            <h1 class="name">Abdullah Mazhar</h1>
+          </div>
+        </div>
+        <div class="right-header">
+          <p class="intro-text">
+            This is mock text, it serves no purpose other than filling in space.
+            This mock text will be replaced with text that actually presents
+            useful information on this page
+          </p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section about" id="about"></section>
+      <section class="section portfolio" id="portfolio"></section>
+      <section class="section blogs" id="blogs"></section>
+      <section class="section contact" id="contact"></section>
+    </main>
+
     <div class="controls">
-      <div class="control header-btn active-btn">
+      <div class="control header-btn active-btn" data-id="home">
         <i class="fas fa-home"></i>
       </div>
-      <div class="control about">
+      <div class="control about" data-id="about">
         <i class="fas fa-user"></i>
       </div>
-      <div class="control portfolio">
+      <div class="control portfolio" data-id="portfolio">
         <i class="fas fa-laptop-code"></i>
       </div>
-      <div class="control blogs">
+      <div class="control blogs" data-id="blogs">
         <i class="fas fa-scroll"></i>
       </div>
-      <div class="control contact">
+      <div class="control contact" data-id="contact">
         <i class="fas fa-envelope-open-text"></i>
       </div>
     </div>
 
-    <header class="section header"></header>
-    <main>
-      <section class="section about"></section>
-      <section class="section portfolio"></section>
-      <section class="section blogs"></section>
-      <section class="section contact"></section>
-    </main>
+    <script src="./app.js"></script>
   </body>
 </html>
