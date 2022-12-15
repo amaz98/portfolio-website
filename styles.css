@@ -50,8 +50,8 @@ section {
 }
 
 .left-box {
-  width: 35%;
-  height: 25%;
+  width: 20vh;
+  height: 20vh;
   border-color: black;
   border-width: 10px 0 0 10px;
   border-style: solid;
@@ -66,8 +66,8 @@ section {
 }
 
 .right-box {
-  width: 35%;
-  height: 25%;
+  width: 20vh;
+  height: 20vh;
   border-color: black;
   border-width: 10px 0 0 10px;
   border-style: solid;
