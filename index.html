@@ -20,8 +20,8 @@
               <div class="left-box"></div>
             </div>
             <div class="middle-header">
-              <h1>Abdullah Mazhar</h1>
-              <p class="sub-title">Developer</p>
+              <h1><span class="auto-name"></span></h1>
+              <p class="sub-title"><span class="auto-tag"></span></p>
             </div>
             <div class="right-corner">
               <div class="right-box"></div>
@@ -48,7 +48,7 @@
                 </li>
                 <li>
                   <a
-                    href="https://github.com/MazETH"
+                    href="https://github.com/MazETH?tab=repositories"
                     target="_blank"
                     rel="noopener"
                     >Portfolio</a
@@ -56,7 +56,7 @@
                 </li>
                 <li>
                   <a
-                    href="https://github.com/MazETH"
+                    href="mailto:a.mazhar0098@gmail.com"
                     target="_blank"
                     rel="noopener"
                     >Contact</a
@@ -67,7 +67,23 @@
           </div>
         </div>
       </div>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script>
+        var typed = new Typed(".auto-name", {
+          strings: ["Abdullah Mazhar"],
+          typeSpeed: 90,
+          onComplete: (self) => {
+            self.cursor.remove();
+          },
+        });
+        var tag = new Typed(".auto-tag", {
+          strings: ["Developer"],
+          typeSpeed: 100,
+          startDelay: 2100,
+          showCursor: false,
+        });
+      </script>
+      <script src="./app.js"></script>
     </section>
-    <script src="./app.js"></script>
   </body>
 </html>
