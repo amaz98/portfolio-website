@@ -154,7 +154,37 @@ ul {
 
 .portfolio-text {
   font-size: 40px;
+  font-weight: 200;
 }
+
+.portfolio-description-text {
+  margin-top: 20px;
+  margin-left: 50px;
+  font-size: 25px;
+}
+
+.portfolio-btn {
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 50px;
+  margin-top: 20px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  font-family: "Orbitron", Arial, sans-serif;
+}
+
+.portfolio-btn a {
+  color: black;
+}
+
+.portfolio-btn:hover {
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.9);
+}
+
 .left-box-text {
   margin-top: 100px;
   margin-left: 10px;
