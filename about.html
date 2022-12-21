@@ -20,8 +20,7 @@
               <div class="left-box"></div>
             </div>
             <div class="middle-header">
-              <h1><span class="auto-name"></span></h1>
-              <p class="sub-title"><span class="auto-tag"></span></p>
+              <p><span class="auto-name"></span></p>
             </div>
             <div class="right-corner">
               <div class="right-box"></div>
@@ -67,17 +66,13 @@
       <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
       <script>
         var typed = new Typed(".auto-name", {
-          strings: ["Abdullah Mazhar"],
-          typeSpeed: 90,
+          strings: [
+            "Hello, my name's Abdullah. I'm 24 years old. I'm a full stack developer, focusing more on the back end. I've been developing for three years now. I have a passion for all things blockchain and finance related. Currently I own a sneaker store located on the outskirts of Washington DC, but nonetheless I'm still able to dedicate a lot of my time to bettering my skills as a developer.",
+          ],
+          typeSpeed: 20,
           onComplete: (self) => {
             self.cursor.remove();
           },
-        });
-        var tag = new Typed(".auto-tag", {
-          strings: ["Developer"],
-          typeSpeed: 100,
-          startDelay: 2100,
-          showCursor: false,
         });
       </script>
       <script src="./app.js"></script>
